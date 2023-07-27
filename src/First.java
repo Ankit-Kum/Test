@@ -8,16 +8,16 @@ public class First {
 		
 		System.setProperty("webdriver.gecko.driver", "/Users/apple/Desktop/driver/geckodriver");
 		WebDriver driver = new FirefoxDriver();
-		//driver.get("https://www.facebook.com/");
+		driver.get("https://www.facebook.com");
 		
 		//www.google.com
 		//driver.navigate().to("https://www.google.com/");
 		//driver.findElement(By.id("APjFqb")).sendKeys("selenium");
 		//driver.findElement(By.name("btnK")).click();
 		//driver.findElement(By.className("gNO89b")).click();
-		driver.navigate().to("https://www.facebook.com/");
+		//driver.navigate().to("https://www.facebook.com/");
 		driver.findElement(By.id("email")).sendKeys("abc@gmail.com");
-		
+		driver.close();		
 		
 	}
 
