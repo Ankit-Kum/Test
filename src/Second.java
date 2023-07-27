@@ -35,6 +35,11 @@ public class Second {
 		driver.findElement(By.name("login")).click();
 	}
 	
+	public void browserclose() {
+		
+		driver.quit();
+	}
+	
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		
@@ -43,6 +48,7 @@ public class Second {
 		ob.productserach();
 		ob.navigate();
 		ob.facebookaut();
+		ob.browserclose();
 		
 	}
 
