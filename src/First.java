@@ -19,7 +19,7 @@ public class First {
 		driver.findElement(By.id("email")).sendKeys("abc@gmail.com");
 		driver.findElement(By.id("pass")).sendKeys("abc");
 		driver.findElement(By.name("login")).click();
-		driver.close();	
+		//driver.close();	
 		System.out.println("Ok guys see you after break");
 		//driver.close();		
 		
