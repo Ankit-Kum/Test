@@ -9,15 +9,17 @@ public class CheckBoxOperations {
 
 		System.setProperty("webdriver.gecko.driver", "/Users/apple/Desktop/driver/geckodriver");
 		WebDriver driver = new FirefoxDriver();
-		driver.get("file:///Users/apple/Desktop/ank/Checkbox.html");
+		//driver.get("file:///Users/apple/Desktop/ank/Checkbox.html");
+		driver.get("https://ankit-kum.github.io/Radio.html");
 		driver.manage().window().maximize();
 
-
+		///html/body/form/input[4]
 		/**
 		 * Validate isSelected and click
 		 */
 
-		WebElement checkBoxSelected = driver.findElement(By.xpath("//*[@id=\"vehicle1\"]"));
+		//WebElement checkBoxSelected = driver.findElement(By.xpath("//*[@id=\"vehicle1\"]"));
+		WebElement checkBoxSelected = driver.findElement(By.xpath("//*[@id=\"html\"]"));
 		boolean isSelected = checkBoxSelected.isSelected();
 
 		// performing click operation if element is not selected 
